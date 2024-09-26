@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Semantic Elements Sample</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header, nav, section, article, aside, footer {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+        }
+        nav a {
+            margin-right: 10px;
+        }
+        figure {
+            display: inline-block;
+            margin: 0;
+            padding: 10px;
+        }
+        figcaption {
+            font-style: italic;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            justify-content: space-between;
+        }
+        aside {
+            width: 30%;
+            background-color: #f9f9f9;
+        }
+        article {
+            width: 65%;
+        }
+        footer{
+            border-top:2px;
+            border-bottom:2px ;
+            text-align:center; 
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Website</h1>
+    <p><time datetime="2024-09-26">September 26, 2024</time></p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+    <article>
+        <h2>Main Article Section</h2>
+        <p>This is an example of the <mark>article</mark> tag. It is used for independent, self-contained content.</p>
+        <figure>
+            <img src="data:image/jpeg;base64,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" alt="Sample Image">
+            <figcaption>This is a sample image inside a <mark>figure</mark> tag.</figcaption>
+        </figure>
+        <details>
+            <summary>More Information</summary>
+            <p>Here is additional information inside a <mark>details</mark> tag, which can be expanded by the user.</p>
+        </details>
+    </article>
+
+    <aside>
+        <h2>Related Content</h2>
+        <p>This is an example of an <mark>aside</mark> tag, typically used for content related to the main article.</p>
+    </aside>
+</main>
+
+<footer>
+    <p >&copy; 2024 My Website</p>
+    <p>All rights reserved.</p>
+</footer>
+
+</body>
+</html>
